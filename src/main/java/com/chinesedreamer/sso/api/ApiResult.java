@@ -1,4 +1,4 @@
-package com.chinesedreamer.sso.api.vo;
+package com.chinesedreamer.sso.api;
 
 /**
  * 登陆、登出放回结果
@@ -9,7 +9,6 @@ public class ApiResult {
 	private Boolean success = Boolean.FALSE;
 	private String errorCode;
 	private String errorMessage;
-	private Exception exception;
 	private Object data;
 	
 	public Boolean getSuccess() {
@@ -21,9 +20,6 @@ public class ApiResult {
 	public String getErrorMessage() {
 		return errorMessage;
 	}
-	public Exception getException() {
-		return exception;
-	}
 	public void setSuccess(Boolean success) {
 		this.success = success;
 	}
@@ -32,9 +28,6 @@ public class ApiResult {
 	}
 	public void setErrorMessage(String errorMessage) {
 		this.errorMessage = errorMessage;
-	}
-	public void setException(Exception exception) {
-		this.exception = exception;
 	}
 	public Object getData() {
 		return data;
